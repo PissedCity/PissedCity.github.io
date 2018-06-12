@@ -1,0 +1,147 @@
+body, html {
+  height: 100%;
+  margin:0;
+  font-size: 16px;
+  font-family: "lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  background-color: #282828;
+  scroll-behavior: smooth;
+}
+
+/* LOGO BAR */
+
+.bimg{
+    background-image:url('../img/mainpic.jpg');
+    min-height: 10%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .75;
+    padding: 1em 1em 1em 1em;
+}
+
+.headerbox{
+  position:absolute;
+  top:5%;
+  width:100%;
+  text-align: center;
+  color:#000;
+  font-size: 27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.headerbox .border {
+  background-color: #111;
+  color:#fff;
+  padding: 0.9em;
+}
+#title1 {
+  color:#f5c925;
+}
+#title2 {
+  font-weight: bold;
+}
+.headerbox .border:hover{
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.4), 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+}
+.headerbox a{
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: #000;
+  min-height:10px;
+}
+.btn {
+  display: inline-block;
+  background: #404041;
+  color:#fff;
+  text-decoration: none;
+  padding: .2em .2em;
+  border: 1px solid #333;
+  margin: .1em ;
+
+  text-align:center;
+  font-weight:bold;
+  font-size: 170%;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: #e5bc24;
+  color: #000;
+}
+
+/* Title */
+.title h1{
+  margin: 0;
+  padding:.7em;
+}
+
+.title{
+  text-align: center;
+  color: #fff;
+  background: #282828;
+  text-decoration: underline;
+}
+
+/* Content */
+.content{
+  padding: 1em;
+  margin:1em 1em;
+  background: #282828;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+  grid-gap: 2em;
+  align-items: center;
+}
+.box{
+  max-height:328px;
+  max-width: 328px;
+  transition:.3s;
+  overflow:hidden;
+  border-radius:10px;
+}
+.box img{
+  transition:.3s;
+}
+.box:hover img{
+  transform: scale(1.03);
+  filter:blur(5px) brightness(40%);
+}
+.box h3{
+  position: absolute;
+  z-index:1;
+  text-align:center;
+  opacity:1;
+  transition: .3s;
+  width:328px;
+  color:#fff;
+  text-shadow: 4px 4px #333;
+  font-size: 50px;
+}
+.box p{
+  position: absolute;
+  z-index:1;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+  transition: .3s;
+  width:328px;
+}
+.box h3 {
+  padding-top: 10px:
+}
+.box p {
+  padding-top:130px;
+}
+.box:hover :not(img){
+  opacity:1;
+}

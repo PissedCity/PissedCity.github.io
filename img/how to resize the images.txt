@@ -1,0 +1,3 @@
+image conversion:
+adobe spark to make the image a square;
+then imgonlin resize the image to 328 by 328.

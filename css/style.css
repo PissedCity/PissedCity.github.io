@@ -1,0 +1,117 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family: "lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  background-color: #000;
+  scroll-behavior: smooth;
+}
+
+/* Background*/
+.pimg1{
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+
+  background-image:url('../img/mainpic.jpg');
+  min-height:90%;
+
+  position:relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+
+  opacity: 0.8;
+}
+
+/* LOGO */
+
+#logo1{
+  opacity:0.7;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Pissed City Box */
+
+#title1 {
+  color:#f5c925;
+}
+#title2 {
+  font-weight: bold;
+}
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align: center;
+  color:#000;
+  font-size: 27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+.ptext .border{
+  background-color: #111;
+  color:#fff;
+  padding:20px;
+}
+.ptext .border:hover{
+  box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+}
+.ptext a{
+  text-decoration: none;
+}
+
+/* Navigation */
+
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: #000;
+  min-height:10px;
+}
+.btn {
+  display: inline-block;
+  background: #404041;
+  color:#fff;
+  text-decoration: none;
+  padding: .5em .5em;
+  border: 1px solid #333;
+  margin: .1em ;
+
+  text-align:center;
+  font-weight:bold;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: #e5bc24;
+  color: #000;
+}
+
+/* About us */
+
+.section-light{
+  margin:1em;
+  background: #f5c925;
+  text-align:center;
+  padding-bottom: 1em;
+  padding-left: 9em;
+  padding-right:9em;
+}
+.section-light h2{
+  margin:0;
+  color: #2f3133;
+  padding-top: 1em;
+  text-decoration:underline;
+}
+.section-light p{
+  color: #000;
+}
