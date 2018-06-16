@@ -7,6 +7,7 @@ body, html {
   line-height:1.8em;
   color:#666;
   background-color: #282828;
+  background-color: #000;
   scroll-behavior: smooth;
 }
 
@@ -89,6 +90,7 @@ body, html {
   text-align: center;
   color: #fff;
   background: #282828;
+  background-color: #000;
   text-decoration: underline;
 }
 
