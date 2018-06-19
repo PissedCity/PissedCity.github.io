@@ -49,7 +49,11 @@ body{
     display:none;
   }
 }
-
+@media(max-width:650px){
+  #logo1{
+    width:100%;
+  }
+}
 
 /* Pissed City Box */
 
@@ -168,4 +172,11 @@ body{
 }
 .section-light p{
   color: #000;
+}
+
+@media(max-width:650px){
+  .section-light{
+    margin:0;
+    padding: 0;
+  }
 }
