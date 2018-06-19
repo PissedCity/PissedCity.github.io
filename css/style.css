@@ -42,8 +42,14 @@ body{
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
 }
+
+@media(max-height: 520px){
+  #logo1{
+    display:none;
+  }
+}
+
 
 /* Pissed City Box */
 
