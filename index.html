@@ -12,6 +12,12 @@
       font-family: 'Teko', sans-serif;
     }
   </style>
+  <script>
+    function jump(h){
+    var top = document.getElementById(h).offsetTop;
+    window.scrollTo(0, top);
+    }
+  </script>
 </head>
 <body>
 
@@ -28,13 +34,13 @@
       </div>
 
       <!--Navigation -->
-      <div class="nav">
+      <div id="nav" class="nav">
         <label class="hamburger"for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle">
+        <input type="checkbox" id="toggle" onclick="jump('nav')">
         <a href="index.html" class="btn">Home</a>
         <a href="drinkinggames.html" class="btn">Drinking games</a>
         <a href="index.html" class="btn">Products</a>
-        <a href="index.html" class="btn">Contact</a>
+        <a href="index.html" id="contacts" class="btn">Contact</a>
       </div>
 
       <!-- About us -->

@@ -10,6 +10,11 @@ body, html{
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x:hidden;
+}
+
+
 /* Background*/
 .pimg1{
   display:grid;
@@ -21,7 +26,7 @@ body, html{
 
   position:relative;
 
-  background-position: center;
+  background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:fixed;
