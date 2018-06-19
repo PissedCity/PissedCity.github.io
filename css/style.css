@@ -112,6 +112,7 @@ body{
   color: #000;
 }
 
+/* MOBILE MENU */
 .hamburger{
   display:none;
 }
@@ -124,7 +125,6 @@ body{
     grid-template-columns: 100%;
     background-color: #404041;
   }
-
   .btn{
     visibility: collapse;
     height:0;
@@ -148,7 +148,6 @@ body{
 
     height:auto;
     -webkit-transition: padding 0.7s;
-
   }
 }
 
