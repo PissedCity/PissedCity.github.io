@@ -116,6 +116,10 @@ body{
 .hamburger{
   display:none;
 }
+.hamburger img{
+  width:30px;
+  height:auto;
+}
 #toggle{
   display:none;
 }
@@ -140,7 +144,7 @@ body{
     font-size: 170%;
     text-align: right;
     padding-right: 1em;
-    padding-top: .2em;
+    padding-top: .3em;
   }
   #toggle:checked ~ .btn {
     visibility: visible;

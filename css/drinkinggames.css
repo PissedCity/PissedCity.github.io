@@ -84,6 +84,10 @@ body, html {
 .hamburger{
   display:none;
 }
+.hamburger img{
+  width:25px;
+  height:auto;
+}
 #toggle{
   display:none;
 }
@@ -108,7 +112,7 @@ body, html {
     font-size: 170%;
     text-align: right;
     padding-right: 1em;
-    padding-top: .2em;
+    padding-top: .4em;
   }
   #toggle:checked ~ .btn {
     visibility: visible;
@@ -135,7 +139,8 @@ body, html {
 /* Content */
 .content{
   padding: 1em;
-  margin:1em 1em;
+  /*margin:1em 1em;*/
+  width:100%;
   background: #282828;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
