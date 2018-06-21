@@ -10,6 +10,12 @@ body, html {
   background-color: #000;
   scroll-behavior: smooth;
 }
+@media(max-width:650px){
+  body{
+    overflow-x: hidden;
+  }
+}
+
 
 /* LOGO BAR */
 
@@ -139,13 +145,13 @@ body, html {
 /* Content */
 .content{
   padding: 1em;
-  /*margin:1em 1em;*/
   width:100%;
   background: #282828;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
   grid-gap: 2em;
   align-items: center;
+
 }
 .box{
   max-height:328px;
