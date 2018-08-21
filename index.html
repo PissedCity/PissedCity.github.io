@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +11,20 @@
   <title>Pissed City</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    .btn{
-      font-family: 'Teko', sans-serif;
-    }
+  .btn{
+    font-family: 'Teko', sans-serif;
+  }
   </style>
   <script>
-    function jump(checkbox1){
-      if(checkbox1.checked){
-        var top = document.getElementById('nav').offsetTop;
-        window.scrollTo(0, top);
-      }
-      else{
-        var top = document.getElementById('background').offsetTop;
-        window.scrollTo(0, top);
-      }
+  function closeNotification(){
+      var elements = document.getElementById("notficationSection");
+      elements.style.display= "none";
     }
   </script>
+
 </head>
 <body>
 
@@ -35,24 +36,68 @@
 
     <!-- Pissed City Box -->
     <div class="ptext">
-      <a href="#sectionb"><span class="border">
+      <a href="#nav"><span class="border">
         <span id="title1">Pissed</span> <span id="title2">City</span></span></a>
       </div>
 
-      <!--Navigation -->
-      <div id="nav" class="nav">
-        <label class="hamburger"for="toggle"><img src="img/hamburger.svg" alt=""></label>
-        <input type="checkbox" id="toggle" onclick="jump(this)">
-        <a href="index.html" class="btn">Home</a>
-        <a href="drinkinggames.html" class="btn">Drinking games</a>
-        <a href="index.html" class="btn">Products</a>
-        <a href="index.html" id="contacts" class="btn">Contact</a>
+      <!-- Notification -->
+      <div class="websitenotice">
+        <h2>Website Coming Soon...</h2>
+        <p>We at PissedCity are hard at work writing our initial tutorials, while your waiting check out our <a href="https://play.google.com/store/apps/developer?id=PissedCity">Apps</a></p>
       </div>
 
-      <!-- About us -->
-      <section id="sectionb" class="section section-light">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, totam similique delectus voluptas sit mollitia beatae libero corporis, debitis porro aliquid ullam tenetur sequi eius perspiciatis nam ipsam fuga cumque error magnam non deserunt maiores, optio numquam? Obcaecati est magni fuga mollitia alias a animi necessitatibus soluta nostrum maiores nulla repellat cum at, architecto velit omnis. Ab quod est sit excepturi, hic culpa doloribus velit! Molestias eos totam dolorum, excepturi sequi repudiandae, velit nihil minima voluptate sed optio rem cupiditate, consequatur officiis deleniti magnam obcaecati magni aliquid? Dolore, eaque beatae eligendi molestias sit cupiditate. Voluptate facilis, repudiandae nisi deserunt iusto!</p>
-      </section>
+      <div class="notifcation" id="notficationSection">
+        <div class="notheader">
+          <a target="_blank" href="https://play.google.com/store/apps/developer?id=PissedCity"><h2>We Have Apps Now...</h2></a>
+          <button onclick="closeNotification()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+        </div>
+        <div class="notContent">
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.PissedCity.OnTheBus"> <img src="img/appIcon.png" alt="Icon"></a>
+          <div class="notDetails">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.PissedCity.OnTheBus"><h3>On The Bus: The Drinking Game</h3></a>
+            <p>Here at PissedCity we are dedicated to giving you and your friends the best evening which is why we are proud to present On The Bus: The Drinking Game. We know that not all party nights are as gracefully planned out as the ones before it, which is why we decided to turn one of our favourite drinking games into an app. Click the icon to go there now!</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <footer class="footer">
+        <div class="section-1">
+          <h4>Stay Connected</h4>
+          <p>sign up below for a termly newsletter on all things Pissed City, Includes: new games, new products, deals </p>
+          <form class="email-news" action="includes/email.php" method="post">
+            <input type="email" name="emailvalue" value="" placeholder="enter e-mail to sign-up...">
+            <button type="submit" name="emailsubmit">Sign-Up</button>
+          </form>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Pissed-City-1910902349209442/" target="_blank"><img src="img/facebook.svg" alt=""> </a>
+            <a href="https://twitter.com/PissedCity" target="_blank"><img src="img/twitter.svg" alt=""> </a>
+            <a href="https://www.instagram.com/pissedcity/" target="_blank"><img src="img/instagram.svg" alt=""> </a>
+            <a href="https://www.youtube.com/channel/UClkCMXY_NAl6J01Hru_8YVw/" target="_blank"><img src="img/youtube.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="inner-section2">
+            <h3>Pissed <span>City</span> &#169;</h3>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">SiteMap</a><br>
+            <p>&#169; 2018 | Pissed City</p>
+          </div>
+        </div>
+        <div class="section-3">
+          <h4>Navigation</h4>
+          <table>
+            <tr><td><a href="#">Home ></a></td></tr>
+            <tr><td><a href="#">Drinking Games ></a></td></tr>
+            <tr><td><a href="#">Products ></a></td></tr>
+            <tr><td><a href="#">Contact ></a></td></tr>
+          </table>
+        </div>
+      </footer>
+
+
+
     </body>
     </html>
